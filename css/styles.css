@@ -54,8 +54,8 @@ footer{
     text-decoration: none;
 }
 
-.nav{
-
+.nav:focus{
+    cursor: pointer;
 }
 
         /* Butoane */
@@ -105,7 +105,7 @@ footer{
 }
 
 .incurajari_st{
-
+    font-weight: 600px;
 }
 
 /* Motto */
