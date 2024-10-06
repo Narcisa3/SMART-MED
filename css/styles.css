@@ -66,6 +66,18 @@ footer{
     list-style: none;
 }
 
+.button_nav{
+    color: black;
+}
+
+.button_nav:hover{
+    color: gold;
+}
+
+.button_nav:focus{
+    cursor: pointer;
+}
+
 .button:hover{
     background-color: antiquewhite;
     color: burlywood;
@@ -116,40 +128,66 @@ footer{
 .motto_titel{
     height: auto;
     width: auto;
+    color: antiquewhite;
+    font-weight: 1500px;
 }
 
 .motto_st{
     font-family: var(--secondary-fonts);
+    font-weight: 1500px;
 }
 
 .alegere{
-    height: 300px;
+    height: 400px;
     width: auto;
+    background-image: url(/images/smart-goals.webp);
+    border: 2px solid white;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    background-position: center;
 }
 
 .titlu{
     align-items: center;
+    color: black;
 }
 
 .text{
     align-items: center;
+    color: black;
 }
 
 .alegerea_ta{
-
+    font-weight: 500px;
+    font-size: 20px;
+    align-items: center;
 }
 
-.carduri{
-    
+.carduri .flashcard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .flashcard{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
+
+}
+
+.same{
+    line-height: 25px;
 }
 
 .para{
-    
+    color: cadetblue;
+    align-items: center;
 }
 
 @media (min-width: 900px) {
