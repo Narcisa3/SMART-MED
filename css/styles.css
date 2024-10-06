@@ -1,41 +1,138 @@
-.header{
+:root{
+    --primary-fonts: 'afacad flux', sans-serif;
+    --secondary-fonts: 'qwitcher grypen', sans-serif; 
+}
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    font-family: var(--primary-fonts);
+}
+
+body{
+    font-family: var(--primary-fonts);
+}
+
+footer{
+    font-family: var(--primary-fonts);
+    height: 200px;
+    width: auto;
+}
+
+        /* Header */
+
+.header{
+    text-decoration: none;
+    background-color: white;
 }
 
 .header_container{
-
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
 }
 
 .header_nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
 
+.header_nav ul{
+    text-decoration: none; 
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    height: 20px;
+    width: auto;
+}
+
+.header_nav a{
+    text-decoration: none;
 }
 
 .nav{
 
 }
 
-.button{
+        /* Butoane */
 
+.button{
+    font-family: var(--primary-fonts);
+    text-decoration: none;
+    list-style: none;
 }
 
-.incurajari{
+.button:hover{
+    background-color: antiquewhite;
+    color: burlywood;
+}
 
+.button:focus{
+    cursor: pointer;
+}
+
+    /* Incurajari */
+
+.incurajari{
+    border: 2px solid white;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    background-image: url(/images/logo-smart-med.jpg);
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    height: 800px;
+    width: auto;
 }
 
 .incurajari_st{
 
 }
 
-.motto{
+/* Motto */
 
+.motto{
+    border: 2px solid white;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    background-image: url(/images/med-pol-law.jpg);
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    height: 800px;
+    width: auto;
+}
+
+.motto_titel{
+    height: auto;
+    width: auto;
 }
 
 .motto_st{
-
+    font-family: var(--secondary-fonts);
 }
 
 .alegere{
+    height: 300px;
+    width: auto;
+}
 
+.titlu{
+    align-items: center;
+}
+
+.text{
+    align-items: center;
 }
 
 .alegerea_ta{
@@ -43,13 +140,26 @@
 }
 
 .carduri{
-
+    
 }
 
 .flashcard{
-
+    display: flex;
+    gap: 40px;
 }
 
 .para{
     
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: antiquewhite;
+    }
 }
